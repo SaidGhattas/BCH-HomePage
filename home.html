@@ -64,10 +64,10 @@ function myFunction() {
       <a href="#Secretariat" style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;";>Secretariat</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars" style="padding-left: 15px;"></i>
   </a>
 
-  <a href="#"><img src="icons/megaphone-fill.svg" style="margin-top: 4px;" /></a>
+  <a href="#"><img src="icons/megaphone-fill.svg" style="margin-top: 4px;padding-right: 15px;" /></a>
 
 
   <a href="#"><img src="icons/question-lg.svg" style="margin-top: 4px;" /></a>
@@ -84,20 +84,20 @@ function myFunction() {
         right:initial;
       }
     </style>
-    <ul id="dropdown-menu" class="dropdown-menu locale-menu" role="menu" ng-class="{&#39;arabic-locale-menu&#39;:currentLanguage==&#39;ar&#39;}">
+ <ul id="dropdown-menu" class="dropdown-menu locale-menu" role="menu" ng-class="{'arabic-locale-menu':currentLanguage=='ar'}">
       <li class="disabled" style="    font-size: 20px; color: #000; margin-left: 40px;margin-right: 10px;margin-top: 4.16%; ">LANGUAGES</li>
-      <hr style="margin:10px;">
-      <li><a class="sg-a-language" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;ar&#39;}" ng-click="changeLanguage(&#39;ar&#39;)" ng-href="#" href="#" style="margin-left: 40px">لعربية</a></li>      <!--ng-click="changeLanguage('ar')"-->
-      <li><a class="sg-a-language" style="margin-left: 40px"translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;zh&#39;}" ng-click="changeLanguage(&#39;zh&#39;)" ng-href="#" href="#">中文</a></li>
-      <li><a class="sg-a-language"style="margin-left: 40px" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;en&#39;}" ng-click="changeLanguage(&#39;en&#39;)" ng-href="#" href="#" class="bold">English</a></li>
-      <li><a class="sg-a-language"style="margin-left: 40px" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;es&#39;}" ng-click="changeLanguage(&#39;es&#39;)" ng-href="#" href="#">Español</a></li>
-      <li><a class="sg-a-language"style="margin-left: 40px" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;fr&#39;}" ng-click="changeLanguage(&#39;fr&#39;)" ng-href="#" href="#">Français</a></li>
-      <li><a class="sg-a-language" style="margin-left:40px"translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;ru&#39;}" ng-click="changeLanguage(&#39;ru&#39;)" ng-href="#" href="#">Русский</a></li>
+      <hr style="padding:0;margin-left: 40px;margin-right:30px; margin-top:16px;margin-bottom: 16px;">
+      <li><a class="sg-a-language" style="margin-left: 30px"translation-url="" ng-class="{'bold':currentLanguage=='ar'}" ng-click="changeLanguage('ar')" ng-href="#" href="#">لعربية</a></li>      <!--ng-click="changeLanguage('ar')"-->
+      <li><a class="sg-a-language" style="margin-left: 30px"translation-url="" ng-class="{'bold':currentLanguage=='zh'}" ng-click="changeLanguage('zh')" ng-href="#" href="#">中文</a></li>
+      <li><a class="sg-a-language"style="margin-left: 30px" translation-url="" ng-class="{'bold':currentLanguage=='en'}" ng-click="changeLanguage('en')" ng-href="#" href="#" class="bold">English</a></li>
+      <li><a class="sg-a-language" style="margin-left: 30px"translation-url="" ng-class="{'bold':currentLanguage=='es'}" ng-click="changeLanguage('es')" ng-href="#" href="#">Español</a></li>
+      <li><a class="sg-a-language" style="margin-left: 30px"translation-url="" ng-class="{'bold':currentLanguage=='fr'}" ng-click="changeLanguage('fr')" ng-href="#" href="#">Français</a></li>
+      <li><a class="sg-a-language" style="margin-left: 30px;margin-bottom:30px"translation-url="" ng-class="{'bold':currentLanguage=='ru'}" ng-click="changeLanguage('ru')" ng-href="#" href="#">Русский</a></li>
     </ul>
 </div></locale-header>
 </div>
 
-   <a href="#"> <img src="icons/bell-fill.svg" style="padding: 0px 10px;height: 19px;    margin-top: 4px;" /></a>
+   <a href="#"> <img src="icons/bell-fill.svg" style="height: 19px;padding-right: 20px;margin-top: 4px;" /></a>
 
  <a href="#"><img src="icons/person-fill.svg" style=" padding-top: 0px;padding-right: 10px;padding-bottom: 3px;padding-left: 10px;;height: 28px;"/>
  </a>
@@ -115,7 +115,7 @@ function myFunction() {
       <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
       <ul class="nav-list">
         <li>
-          <a class="sg-a-header" style="  padding-right: 0px;margin-left: 32px;" href="#">HOME</a>
+          <a class="sg-a-header" style="    padding-right: 0px; margin-left: 5px;position: relative;right: 0px;" href="#">HOME</a>
         </li>
         <li>
           <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#">ABOUT</a>
@@ -124,22 +124,22 @@ function myFunction() {
           <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!" >SEARCH<img src="icons/caret-down-fill.svg"  style="height: 15px;margin-top: 6px;padding-left: 1px;" /></a>
      <ul class="nav-dropdown">
             <li>
-              <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px" href="#" >RECORDS</a>
+              <a class="sg-a-header"style="font-weight: 500;font-size: 18px;border-top-right-radius: 8px;border-top-left-radius: 8px" href="#" >RECORDS</a>
             </li>
             <li>
-              <a class="sg-a-header"  href="#">REGISTRIES: </a>
+              <a class="sg-a-header" style=" font-weight: 500;font-size: 18px;" href="#">REGISTRIES: </a>
             </li>
              <li>
-              <a class="sg-a-header" href="#" style="padding-top:10px">-LMO</a>
+              <a class="sg-a-header" href="#" style="padding-top:10px;font-weight: 500;font-size: 18px">-LMO</a>
             </li>
              <li>
-              <a class="sg-a-header" href="#"style="padding-top:10px">-Organism</a>
+              <a class="sg-a-header" href="#"style="padding-top:10px;font-weight: 500;font-size: 18px">-Organism</a>
             </li>
              <li>
-              <a class="sg-a-header" href="#"style="padding-top:10px">-GENE</a>
+              <a class="sg-a-header" href="#"style="padding-top:10px;font-weight: 500;font-size: 18px">-GENE</a>
             </li>
             <li>
-              <a class="sg-a-header" href="#"style="padding-bottom:32px;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px">NATIONAL REPORTS</a>
+              <a class="sg-a-header" href="#"style="font-weight: 500;font-size: 18px;padding-bottom:32px;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px">NATIONAL REPORTS</a>
             </li>
           </ul>
         </li>
@@ -148,11 +148,11 @@ function myFunction() {
         </li>
         <li>
           <a class="sg-a-header" href="#" style="  padding-right: 0px;margin-left: 32px;">COUNTRY PROFILES<img src="icons/caret-down-fill.svg"  style="height: 15px; margin-top: 6px; padding-left: 1px;"/></a>
-          <ul class="nav-dropdown" style="width: 352px">
+          <ul class="nav-dropdown" style="width: 380px">
          
             <ul class="country-list-dd" style="  border-radius: 10px;max-height:340px;overflow-y:scroll;max-width: 400px;    margin-bottom: 0px; ">
-                                <!-- ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border: 0px !important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
-                                  <input type="text" placeholder="&#xF002; Search countries" style="    font-family: Roboto, FontAwesome; width: 290px; margin-left: 24px;margin-bottom: 10px;"   
+          <!-- ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border: 0px !important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                  <input type="text" placeholder="&#xF002; Search countries" style="    font-family: Roboto, FontAwesome;font-style: normal;font-weight: normal; width: 320px; margin-left: 24px;margin-bottom: 10px;margin-top: 4.167%"   
 class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countrySearch($event)" ng-model="countrySearchQuery">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AF" href=" #countries/AF">
                                         <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
@@ -173,7 +173,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AD" href=" #countries/AD">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Andorra
                                         </span>
                                     </a>
@@ -191,7 +191,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AR" href=" #countries/AR">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Argentina
                                         </span>
                                     </a>
@@ -203,7 +203,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AU" href=" #countries/AU">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Australia
                                         </span>
                                     </a>
@@ -299,7 +299,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BN" href=" #countries/BN">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Brunei Darussalam
                                         </span>
                                     </a>
@@ -341,7 +341,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CA" href=" #countries/CA">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Canada
                                         </span>
                                     </a>
@@ -359,7 +359,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CL" href=" #countries/CL">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Chile
                                         </span>
                                     </a>
@@ -389,7 +389,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CK" href=" #countries/CK">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Cook Islands
                                         </span>
                                     </a>
@@ -432,7 +432,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KP" href=" #countries/KP">
                                         <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
-                                            Democratic People's Republic of Korea
+                                            Democratic Republic of Korea
                                         </span>
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
@@ -485,7 +485,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GQ" href=" #countries/GQ">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Equatorial Guinea
                                         </span>
                                     </a>
@@ -605,13 +605,13 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/HT" href=" #countries/HT">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Haiti
                                         </span>
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VA" href=" #countries/VA">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Holy See
                                         </span>
                                     </a>
@@ -629,7 +629,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IS" href=" #countries/IS">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Iceland
                                         </span>
                                     </a>
@@ -665,7 +665,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IL" href=" #countries/IL">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Israel
                                         </span>
                                     </a>
@@ -761,7 +761,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LI" href=" #countries/LI">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Liechtenstein
                                         </span>
                                     </a>
@@ -839,13 +839,13 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/FM" href=" #countries/FM">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Micronesia (Federated States of)
                                         </span>
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MC" href=" #countries/MC">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Monaco
                                         </span>
                                     </a>
@@ -893,7 +893,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NP" href=" #countries/NP">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Nepal
                                         </span>
                                     </a>
@@ -1031,7 +1031,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/RU" href=" #countries/RU">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Russian Federation
                                         </span>
                                     </a>
@@ -1067,13 +1067,13 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SM" href=" #countries/SM">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             San Marino
                                         </span>
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ST" href=" #countries/ST">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Sao Tome and Principe
                                         </span>
                                     </a>
@@ -1103,13 +1103,13 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SL" href=" #countries/SL">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Sierra Leone
                                         </span>
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SG" href=" #countries/SG">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Singapore
                                         </span>
                                     </a>
@@ -1145,7 +1145,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SS" href=" #countries/SS">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             South Sudan
                                         </span>
                                     </a>
@@ -1211,7 +1211,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TL" href=" #countries/TL">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Timor-Leste
                                         </span>
                                     </a>
@@ -1253,7 +1253,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TV" href=" #countries/TV">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Tuvalu
                                         </span>
                                     </a>
@@ -1278,7 +1278,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GB" href=" #countries/GB">
                                         <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
-                                            United Kingdom of Great Britain and Northern I classand
+                                            United Kingdom of Great Britain 
                                         </span>
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
@@ -1289,7 +1289,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/US" href=" #countries/US">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             United States of America
                                         </span>
                                     </a>
@@ -1307,7 +1307,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VU" href=" #countries/VU">
-                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
                                             Vanuatu
                                         </span>
                                     </a>
@@ -1345,8 +1345,8 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
 
                             </ul>
                             <li style="    width: 100%;">
-                       <div class="card-footer3" style="padding-left: 24px;padding-right: 24px;">
-                            <a class="cardFooterLink2 " style="font-weight: normal;color: white;font-size: 18px;text-decoration: underline;padding-left: 15px;" href="#">overview - LIST ALL COUNTRIES </a>
+                       <div class="card-footer3" style="padding-left: 38px;padding-right: 24px;">
+                            <a class="cardFooterLink2 " style="font-weight: normal;color: white;font-size: 18px;text-decoration: underline;padding-left: 15px; line-height: 220%;" href="#">overview - LIST ALL COUNTRIES </a>
                         </div>
                             </li>
                                
@@ -1356,22 +1356,22 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
           <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!">HELP<img src="icons/caret-down-fill.svg"  style="height: 15px; margin-top: 6px;padding-left: 1px;" /></a>
      <ul class="nav-dropdown">
             <li>
-              <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px" href="#">KNOWLEDGE BASE</a>
+              <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px;font-weight: 500;font-size: 18px" href="#">KNOWLEDGE BASE</a>
             </li>
             <li>
-              <a class="sg-a-header" href="#">FAQs</a>
+              <a class="sg-a-header" style="font-weight: 500;font-size: 18px" href="#">FAQs</a>
             </li>
             <li>
-              <a class="sg-a-header" href="#">TRAINING MATERIALS</a>
+              <a class="sg-a-header" style="font-weight: 500;font-size: 18px" href="#">TRAINING MATERIALS</a>
             </li>
             <li>
-              <a class="sg-a-header" href="#">TRAINING SITE</a>
+              <a class="sg-a-header" style="font-weight: 500;font-size: 18px" href="#">TRAINING SITE</a>
             </li>
             <li>
-              <a class="sg-a-header" href="#">CONTACT US</a>
+              <a class="sg-a-header" style="font-weight: 500;font-size: 18px" href="#">CONTACT US</a>
             </li>
             <li>
-              <a class="sg-a-header" style="border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;padding-bottom:32px"href="#">BCH ON BCH FORUM</a>
+              <a class="sg-a-header" style="border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;padding-bottom:32px;font-weight: 500;font-size: 18px"href="#">BCH ON BCH FORUM</a>
             </li>
           </ul>
         </li>
@@ -1380,13 +1380,13 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
           <a class="sg-a-header" style="  padding-right: 0px;margin-left: 32px;" href="#">FORUM</a>
         </li>
          <li style="float:right;">
-          <a class="sg-a-header"style="padding-right: 32px" href="#">PROTOCOL<img src="icons/caret-down-fill.svg"style="height: 15px;margin-top: 6px;padding-left: 1px;" /></a>
+          <a class="sg-a-header"style="padding-right: 47px" href="#">PROTOCOL<img src="icons/caret-down-fill.svg"style="height: 15px;margin-top: 6px;padding-left: 1px;" /></a>
           <ul style="right: 0px;" class="nav-dropdown">
             <li>
-              <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px;width: 348px;" href="#">CARTAGENA PROTOCOL</a>
+              <a class="sg-a-header"style="font-weight: 500;font-size: 18px;border-top-right-radius: 8px;border-top-left-radius: 8px;width: 348px;" href="#">CARTAGENA PROTOCOL</a>
             </li>
             <li>
-              <a class="sg-a-header" style="border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;padding-bottom: 32px;width: 348px"href="#">SUPPLEMENTARY PROTOCOL</a>
+              <a class="sg-a-header" style="font-weight: 500;font-size: 18px;border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;padding-bottom: 32px;width: 348px"href="#">SUPPLEMENTARY PROTOCOL</a>
             </li>
           </ul>
         </li>
@@ -1409,29 +1409,29 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
             <div class="row-home">
                 
                     <div class="card" style="margin-right: 2.70%">
-                      <div class="img-top-card"><img  src="icons/Lightbulb (1).svg" style="height: 60px; margin-top: 45%; margin-left: 30%;" /></div>
+                      <div class="img-top-card"><img  src="icons/Lightbulb (1).svg"  /></div>
                       <div class="card-body">
                              <h5 class="card-title"> Learn about the BCH</h5>
                             <p class="card-text" >About the BCH <br> About the Protocol <br> Capacity building <br>FAQs</br></p>
                         
                         </div>
                           <div class="card-footer">
-                            <a class="cardFooterLink pull-right" href="#">Get Started <img id="sg-img3" src="icons/Vector (1).svg"> </a>
+                             <a class="cardFooterLink pull-right" href="#"> Get Started  <i class="fa fa-arrow-right"></i> </a>
                         </div>
                     </div>
                 
             <div class="card" style="margin-right: 2.70%">
-                      <div class="img-top-card"><img  src="icons/search_dna (1).svg" style="height: 60px; margin-top: 45%; margin-left: 30%;" /></div>
+                      <div class="img-top-card"><img  src="icons/search_dna (1).svg"  /></div>
                         <div class="card-body">
                              <h5 class="card-title"> Search records</h5>
                             <p class="card-text" style="   " >Take the Tour <br> Help using the search <br>Registries: LMO-Organism-Gene  <br> National Reports</p>
                             
                         </div>
                             <div class="card-footer">
-                            <a class="cardFooterLink pull-right" href="#">SEARCH <img id="sg-img3" src="icons/Vector (1).svg"> </a>
+                            <a class="cardFooterLink pull-right" href="#"> Search  <i class="fa fa-arrow-right"></i> </a>
                         </div>
                     </div>  <div class="card" style="">
-                      <div class="img-top-card"><img  src="icons/Upload (1).svg" style="height: 60px; margin-top: 45%;margin-left: 30%;" /></div>
+                      <div class="img-top-card"><img  src="icons/Upload (1).svg"  /></div>
                         <div class="card-body">
                              <h5 class="card-title"> Submit records</h5>
                             <p class="card-text" style=" " >
@@ -1439,13 +1439,13 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                              
                         </div>
                             <div class="card-footer">
-                            <a class="cardFooterLink pull-right" href="#">SUBMIT <img id="sg-img3" src="icons/Vector (1).svg"> </a>
+                              <a class="cardFooterLink pull-right" href="#"> SUBMIT  <i class="fa fa-arrow-right"></i> </a>
                         </div>
                     </div>
           </div>  
                 
               <div class="card-footer2">
-                            <a  class="cardFooterLink3" href="#"> EXPLORE THE BCH MAP  <img id="sg-img4" src="icons/Vector (2).svg">  </a>
+                            <a  class="cardFooterLink3" href="#"> EXPLORE THE BCH MAP  <i class="fa fa-arrow-down"></i>  </a>
                            
                        </div>
                     

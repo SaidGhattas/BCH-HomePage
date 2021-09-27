@@ -1,8 +1,7 @@
 
 .mobile-container {
   
-padding-left: 15px;
-padding-right: 15px;
+
   background-color: white;
   height: 24%;
   color: white;
@@ -25,6 +24,34 @@ height: 100px
     background-color: white;
 }
 
+#CBD-Branding .dropdown-menu {
+    z-index: 1100;
+    left: inherit;
+      padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+#CBD-Branding .locale-menu {
+  position: absolute;
+    right: 4px;
+    width: 244px;
+    float: right;
+    top: 6.1%;
+    left: inherit;
+    height: 305px;
+}
+.sg-a-language:hover{
+color: #DA3B01;
+}
 .sg-nav #myLinks  {
   display: none;
 
@@ -52,7 +79,7 @@ font-family: Roboto;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
-line-height: 140%;
+
 color: #000000;
 
 }
@@ -129,37 +156,14 @@ padding-left: 6px;
     background-color: white;
     border-radius: 5px;
 }
-.dropdown-menu {
-    position: absolute;
-      top: 5%;
-      left: 85%;
-    z-index: 1000;
-    display: none;
-    overflow: auto;
-    height: 288px;
-    width: 224px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-  }
+
 hr.red-line{
-  height:2px;
-  border-width:0px;
-  color:red;
-  background-color:black;
-  margin-top: 10px;
+height: 2px;
+    border-width: 0px;
+    background-color: #D0D0D0;
+    margin-top: 10px;
     margin-bottom: 20px;
     border: 0;
-    border-top: 1px solid #eee;
 }
 
 .sg-h1-header {
@@ -173,8 +177,7 @@ font-weight: bold;
 font-size: 64px;
 line-height: 75px;
 letter-spacing: 0.05em;
-
-  padding-left: 32px;
+  padding-left: 38px
 }
 .sg-h4-header {
   text-align: left;
@@ -209,16 +212,31 @@ nav.sg-nav1 ul li a:visited:hover {
     text-decoration: none;
 
 }
+a:focus, a:hover {
+    color: #DA3B01;
+    text-decoration: underline;
+}
+.sg-a-header-a{
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-decoration-line: underline;
+text-transform: uppercase;
+}
 
 nav.sg-nav1 ul li ul li {
   min-width: 190px;
+  line-height: 0px;
 }
 nav.sg-nav1 ul li ul li a.sg-a-header {
- padding-left: 40px;
-    padding-right: 40px;
+ padding-left: 32px;
     padding-top: 32px;
-    line-height: 20px;
-    width: 264px;
+    line-height: 140%;
+    width: 280px;
 }
 
 .nav-dropdown {
@@ -365,9 +383,12 @@ letter-spacing: 0.05em;
     padding-right: 9.37%;
 }
 .img-top-card{
-    position: absolute;
-    margin-top: 2%;
-    margin-left: 1.5%;
+position: absolute;
+    margin-top: 11%;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+    width: 20%;
 }
 .card-title{
     margin-top: 10%;
@@ -412,9 +433,10 @@ border-radius: 10px;
 }
 .card-footer3 {
    
-      height: 40px;
+          height: 55px;
     background-color: #00405C;
-    border-radius: 5px;
+   border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     margin: auto;
     width: 100%;
     padding: 1.5%;
@@ -895,7 +917,7 @@ a.cardFooterLink3:hover {
 a.sg-a-header:focus {
    color: black;
 text-decoration-line: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 5px;
     text-decoration-style: initial;
     text-decoration-color: #DA3B01;
   text-underline-position: under;
