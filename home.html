@@ -1,0 +1,1840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+}
+</script>
+<script>
+(function($) { 
+  $(function() { 
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); 
+})(jQuery);
+</script>
+</head>
+
+<body class="body-body">
+<div class="sg-top-top">
+<!-- Simulate a smartphone / tablet look -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="sg-nav">
+<a href="#home" class="active" style="color:#29a329;padding-left: 8px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">Convention on Biological Diversity </a>
+  <div id="myLinks" >
+    <a href="#Cartagena Protocol"style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">Cartagena Protocol</a>
+    <a href="#Nagoya Protocol" style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">Nagoya Protocol</a>
+    <a href="#Programmes" style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;";>Programmes</a>
+     <a href="#Information" style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;";>Information</a>
+      <a href="#Secretariat" style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;";>Secretariat</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <a href="#"><img src="icons/megaphone-fill.svg" style="margin-top: 4px;" /></a>
+
+
+  <a href="#"><img src="icons/question-lg.svg" style="margin-top: 4px;" /></a>
+
+<div class="lang">
+    <locale-header class="rp-lang ng-isolate-scope" id="CBD-Branding"><div hover-effect=".dropdown-menu" class="locale ng-isolate-scope" id="CBD-Branding" lang="en">
+    <a rel="noopener" ng-href="#" class="set-languages" data-toggle="dropdown" href="#">
+      <span class="badge1 ">
+        <span ng-bind="currentLanguage|uppercase" class="ng-binding" style="color: black;font-size: 16px;">EN</span><img src="icons/caret-down-fill.svg"  style="height: 15px;padding-left: 1px;" />
+      </span>
+    </a>
+    <style>
+      .arabic-locale-menu{
+        right:initial;
+      }
+    </style>
+    <ul id="dropdown-menu" class="dropdown-menu locale-menu" role="menu" ng-class="{&#39;arabic-locale-menu&#39;:currentLanguage==&#39;ar&#39;}">
+      <li class="disabled" style="    font-size: 20px; color: #000; margin-left: 40px;margin-right: 10px;margin-top: 4.16%; ">LANGUAGES</li>
+      <hr style="margin:10px;">
+      <li><a class="sg-a-language" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;ar&#39;}" ng-click="changeLanguage(&#39;ar&#39;)" ng-href="#" href="#" style="margin-left: 40px">لعربية</a></li>      <!--ng-click="changeLanguage('ar')"-->
+      <li><a class="sg-a-language" style="margin-left: 40px"translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;zh&#39;}" ng-click="changeLanguage(&#39;zh&#39;)" ng-href="#" href="#">中文</a></li>
+      <li><a class="sg-a-language"style="margin-left: 40px" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;en&#39;}" ng-click="changeLanguage(&#39;en&#39;)" ng-href="#" href="#" class="bold">English</a></li>
+      <li><a class="sg-a-language"style="margin-left: 40px" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;es&#39;}" ng-click="changeLanguage(&#39;es&#39;)" ng-href="#" href="#">Español</a></li>
+      <li><a class="sg-a-language"style="margin-left: 40px" translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;fr&#39;}" ng-click="changeLanguage(&#39;fr&#39;)" ng-href="#" href="#">Français</a></li>
+      <li><a class="sg-a-language" style="margin-left:40px"translation-url="" ng-class="{&#39;bold&#39;:currentLanguage==&#39;ru&#39;}" ng-click="changeLanguage(&#39;ru&#39;)" ng-href="#" href="#">Русский</a></li>
+    </ul>
+</div></locale-header>
+</div>
+
+   <a href="#"> <img src="icons/bell-fill.svg" style="padding: 0px 10px;height: 19px;    margin-top: 4px;" /></a>
+
+ <a href="#"><img src="icons/person-fill.svg" style=" padding-top: 0px;padding-right: 10px;padding-bottom: 3px;padding-left: 10px;;height: 28px;"/>
+ </a>
+
+<hr class="red-line">
+<h1 class="sg-h1-header">BCH</h1>
+<h4 class="sg-h4-header" style= "display:inline";>BIOSAFETY CLEARING HOUSE</h4>
+
+
+
+
+<section class="nav-bar">
+
+    <nav class="sg-nav1">
+      <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a class="sg-a-header" style="  padding-right: 0px;margin-left: 32px;" href="#">HOME</a>
+        </li>
+        <li>
+          <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#">ABOUT</a>
+        </li>
+          <li>
+          <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!" >SEARCH<img src="icons/caret-down-fill.svg"  style="height: 15px;margin-top: 6px;padding-left: 1px;" /></a>
+     <ul class="nav-dropdown">
+            <li>
+              <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px" href="#" >RECORDS</a>
+            </li>
+            <li>
+              <a class="sg-a-header"  href="#">REGISTRIES: </a>
+            </li>
+             <li>
+              <a class="sg-a-header" href="#" style="padding-top:10px">-LMO</a>
+            </li>
+             <li>
+              <a class="sg-a-header" href="#"style="padding-top:10px">-Organism</a>
+            </li>
+             <li>
+              <a class="sg-a-header" href="#"style="padding-top:10px">-GENE</a>
+            </li>
+            <li>
+              <a class="sg-a-header" href="#"style="padding-bottom:32px;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px">NATIONAL REPORTS</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="sg-a-header" style="  padding-right: 0px;margin-left: 32px;" href="#!">SUBMIT</a>
+        </li>
+        <li>
+          <a class="sg-a-header" href="#" style="  padding-right: 0px;margin-left: 32px;">COUNTRY PROFILES<img src="icons/caret-down-fill.svg"  style="height: 15px; margin-top: 6px; padding-left: 1px;"/></a>
+          <ul class="nav-dropdown" style="width: 352px">
+         
+            <ul class="country-list-dd" style="  border-radius: 10px;max-height:340px;overflow-y:scroll;max-width: 400px;    margin-bottom: 0px; ">
+                                <!-- ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border: 0px !important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                  <input type="text" placeholder="&#xF002; Search countries" style="    font-family: Roboto, FontAwesome; width: 290px; margin-left: 24px;margin-bottom: 10px;"   
+class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countrySearch($event)" ng-model="countrySearchQuery">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AF" href=" #countries/AF">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Afghanistan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AL" href=" #countries/AL">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Albania
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/DZ" href=" #countries/DZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Algeria
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AD" href=" #countries/AD">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Andorra
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AO" href=" #countries/AO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Angola
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AG" href=" #countries/AG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Antigua and Barbuda
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AR" href=" #countries/AR">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Argentina
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AM" href=" #countries/AM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Armenia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AU" href=" #countries/AU">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Australia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AT" href=" #countries/AT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Austria
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AZ" href=" #countries/AZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Azerbaijan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BS" href=" #countries/BS">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Bahamas
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BH" href=" #countries/BH">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Bahrain
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BD" href=" #countries/BD">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Bangladesh
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BB" href=" #countries/BB">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Barbados
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BY" href=" #countries/BY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Belarus
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BE" href=" #countries/BE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Belgium
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BZ" href=" #countries/BZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Belize
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BJ" href=" #countries/BJ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Benin
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BT" href=" #countries/BT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Bhutan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BO" href=" #countries/BO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Bolivia (Plurinational State of)
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BA" href=" #countries/BA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Bosnia and Herzegovina
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BW" href=" #countries/BW">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Botswana
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BR" href=" #countries/BR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Brazil
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BN" href=" #countries/BN">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Brunei Darussalam
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BG" href=" #countries/BG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Bulgaria
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BF" href=" #countries/BF">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Burkina Faso
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/BI" href=" #countries/BI">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Burundi
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CV" href=" #countries/CV">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Cabo Verde
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KH" href=" #countries/KH">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Cambodia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CM" href=" #countries/CM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Cameroon
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CA" href=" #countries/CA">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Canada
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CF" href=" #countries/CF">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Central African Republic
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TD" href=" #countries/TD">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Chad
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CL" href=" #countries/CL">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Chile
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CN" href=" #countries/CN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            China
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CO" href=" #countries/CO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Colombia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KM" href=" #countries/KM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Comoros
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CG" href=" #countries/CG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Congo
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CK" href=" #countries/CK">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Cook Islands
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CR" href=" #countries/CR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Costa Rica
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/HR" href=" #countries/HR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Croatia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CU" href=" #countries/CU">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Cuba
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CY" href=" #countries/CY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Cyprus
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CZ" href=" #countries/CZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Czech Republic
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CI" href=" #countries/CI">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Côte d'Ivoire
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KP" href=" #countries/KP">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Democratic People's Republic of Korea
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CD" href=" #countries/CD">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Democratic Republic of the Congo
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/DK" href=" #countries/DK">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Denmark
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/DJ" href=" #countries/DJ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Djibouti
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/DM" href=" #countries/DM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Dominica
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/DO" href=" #countries/DO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Dominican Republic
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/EC" href=" #countries/EC">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Ecuador
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/EG" href=" #countries/EG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Egypt
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SV" href=" #countries/SV">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            El Salvador
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GQ" href=" #countries/GQ">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Equatorial Guinea
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ER" href=" #countries/ER">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Eritrea
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/EE" href=" #countries/EE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Estonia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SZ" href=" #countries/SZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Eswatini
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ET" href=" #countries/ET">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Ethiopia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/EU" href=" #countries/EU">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            European Union
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/FJ" href=" #countries/FJ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Fiji
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/FI" href=" #countries/FI">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Finland
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/FR" href=" #countries/FR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            France
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GA" href=" #countries/GA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Gabon
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GM" href=" #countries/GM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Gambia (the)
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GE" href=" #countries/GE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Georgia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/DE" href=" #countries/DE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Germany
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GH" href=" #countries/GH">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Ghana
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GR" href=" #countries/GR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Greece
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GD" href=" #countries/GD">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Grenada
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GT" href=" #countries/GT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Guatemala
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GN" href=" #countries/GN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Guinea
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GW" href=" #countries/GW">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Guinea-Bissau
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GY" href=" #countries/GY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Guyana
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/HT" href=" #countries/HT">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Haiti
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VA" href=" #countries/VA">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Holy See
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/HN" href=" #countries/HN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Honduras
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/HU" href=" #countries/HU">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Hungary
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IS" href=" #countries/IS">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Iceland
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IN" href=" #countries/IN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            India
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ID" href=" #countries/ID">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Indonesia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IR" href=" #countries/IR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Iran (Islamic Republic of)
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IQ" href=" #countries/IQ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Iraq
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IE" href=" #countries/IE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            I classand
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IL" href=" #countries/IL">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Israel
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/IT" href=" #countries/IT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Italy
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/JM" href=" #countries/JM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Jamaica
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/JP" href=" #countries/JP">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Japan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/JO" href=" #countries/JO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Jordan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KZ" href=" #countries/KZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Kazakhstan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KE" href=" #countries/KE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Kenya
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KI" href=" #countries/KI">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Kiribati
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KW" href=" #countries/KW">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Kuwait
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KG" href=" #countries/KG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Kyrgyzstan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LA" href=" #countries/LA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Lao People's Democratic Republic
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LV" href=" #countries/LV">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Latvia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LB" href=" #countries/LB">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Lebanon
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LS" href=" #countries/LS">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Lesotho
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LR" href=" #countries/LR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Liberia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LY" href=" #countries/LY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Libya
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LI" href=" #countries/LI">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Liechtenstein
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LT" href=" #countries/LT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Lithuania
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LU" href=" #countries/LU">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Luxembourg
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MG" href=" #countries/MG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Madagascar
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MW" href=" #countries/MW">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Malawi
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MY" href=" #countries/MY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Malaysia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MV" href=" #countries/MV">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Maldives
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ML" href=" #countries/ML">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Mali
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MT" href=" #countries/MT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Malta
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MH" href=" #countries/MH">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Marshall Islands
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MR" href=" #countries/MR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Mauritania
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MU" href=" #countries/MU">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Mauritius
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MX" href=" #countries/MX">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Mexico
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/FM" href=" #countries/FM">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Micronesia (Federated States of)
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MC" href=" #countries/MC">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Monaco
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MN" href=" #countries/MN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Mongolia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ME" href=" #countries/ME">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Montenegro
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MA" href=" #countries/MA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Morocco
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MZ" href=" #countries/MZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Mozambique
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MM" href=" #countries/MM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Myanmar
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NA" href=" #countries/NA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Namibia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NR" href=" #countries/NR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Nauru
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NP" href=" #countries/NP">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Nepal
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NL" href=" #countries/NL">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Netherlands
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NZ" href=" #countries/NZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            New Zealand
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NI" href=" #countries/NI">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Nicaragua
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NE" href=" #countries/NE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Niger
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NG" href=" #countries/NG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Nigeria
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NU" href=" #countries/NU">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Niue
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MK" href=" #countries/MK">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            North Macedonia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/NO" href=" #countries/NO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Norway
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/OM" href=" #countries/OM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Oman
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PK" href=" #countries/PK">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Pakistan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PW" href=" #countries/PW">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Palau
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PA" href=" #countries/PA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Panama
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PG" href=" #countries/PG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Papua New Guinea
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PY" href=" #countries/PY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Paraguay
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PE" href=" #countries/PE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Peru
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PH" href=" #countries/PH">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Philippines
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PL" href=" #countries/PL">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Poland
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PT" href=" #countries/PT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Portugal
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/QA" href=" #countries/QA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Qatar
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KR" href=" #countries/KR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Republic of Korea
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/MD" href=" #countries/MD">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Republic of Moldova
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/RO" href=" #countries/RO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Romania
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/RU" href=" #countries/RU">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Russian Federation
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/RW" href=" #countries/RW">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Rwanda
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/KN" href=" #countries/KN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Saint Kitts and Nevis
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LC" href=" #countries/LC">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Saint Lucia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VC" href=" #countries/VC">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Saint Vincent and the Grenadines
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/WS" href=" #countries/WS">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Samoa
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SM" href=" #countries/SM">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            San Marino
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ST" href=" #countries/ST">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Sao Tome and Principe
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SA" href=" #countries/SA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Saudi Arabia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SN" href=" #countries/SN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Senegal
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/RS" href=" #countries/RS">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Serbia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SC" href=" #countries/SC">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Seychelles
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SL" href=" #countries/SL">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Sierra Leone
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SG" href=" #countries/SG">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Singapore
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SK" href=" #countries/SK">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Slovakia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SI" href=" #countries/SI">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Slovenia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SB" href=" #countries/SB">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Solomon Islands
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SO" href=" #countries/SO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Somalia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ZA" href=" #countries/ZA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            South Africa
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SS" href=" #countries/SS">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            South Sudan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ES" href=" #countries/ES">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Spain
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/LK" href=" #countries/LK">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Sri Lanka
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/PS" href=" #countries/PS">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            State of Palestine
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SD" href=" #countries/SD">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Sudan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SR" href=" #countries/SR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Suriname
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SE" href=" #countries/SE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Sweden
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/CH" href=" #countries/CH">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Switzerland
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/SY" href=" #countries/SY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Syrian Arab Republic
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TJ" href=" #countries/TJ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Tajikistan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TH" href=" #countries/TH">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Thailand
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TL" href=" #countries/TL">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Timor-Leste
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TG" href=" #countries/TG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Togo
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TO" href=" #countries/TO">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Tonga
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TT" href=" #countries/TT">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Trinidad and Tobago
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TN" href=" #countries/TN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Tunisia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TR" href=" #countries/TR">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Turkey
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TM" href=" #countries/TM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Turkmenistan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TV" href=" #countries/TV">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Tuvalu
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/UG" href=" #countries/UG">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Uganda
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/UA" href=" #countries/UA">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Ukraine
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/AE" href=" #countries/AE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            United Arab Emirates
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/GB" href=" #countries/GB">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            United Kingdom of Great Britain and Northern I classand
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/TZ" href=" #countries/TZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            United Republic of Tanzania
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/US" href=" #countries/US">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            United States of America
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/UY" href=" #countries/UY">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Uruguay
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/UZ" href=" #countries/UZ">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Uzbekistan
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VU" href=" #countries/VU">
+                                        <span class="bold ng-binding color-non-party" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Vanuatu
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VE" href=" #countries/VE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Venezuela (Bolivarian Republic of)
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VN" href=" #countries/VN">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Viet Nam
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/YE" href=" #countries/YE">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Yemen
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ZM" href=" #countries/ZM">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Zambia
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
+                                    <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/ZW" href=" #countries/ZW">
+                                        <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
+                                            Zimbabwe
+                                        </span>
+                                    </a>
+                                </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code -->
+
+                            </ul>
+                            <li style="    width: 100%;">
+                       <div class="card-footer3" style="padding-left: 24px;padding-right: 24px;">
+                            <a class="cardFooterLink2 " style="font-weight: normal;color: white;font-size: 18px;text-decoration: underline;padding-left: 15px;" href="#">overview - LIST ALL COUNTRIES </a>
+                        </div>
+                            </li>
+                               
+          </ul>
+        </li>
+      <li>
+          <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!">HELP<img src="icons/caret-down-fill.svg"  style="height: 15px; margin-top: 6px;padding-left: 1px;" /></a>
+     <ul class="nav-dropdown">
+            <li>
+              <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px" href="#">KNOWLEDGE BASE</a>
+            </li>
+            <li>
+              <a class="sg-a-header" href="#">FAQs</a>
+            </li>
+            <li>
+              <a class="sg-a-header" href="#">TRAINING MATERIALS</a>
+            </li>
+            <li>
+              <a class="sg-a-header" href="#">TRAINING SITE</a>
+            </li>
+            <li>
+              <a class="sg-a-header" href="#">CONTACT US</a>
+            </li>
+            <li>
+              <a class="sg-a-header" style="border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;padding-bottom:32px"href="#">BCH ON BCH FORUM</a>
+            </li>
+          </ul>
+        </li>
+        
+        <li>
+          <a class="sg-a-header" style="  padding-right: 0px;margin-left: 32px;" href="#">FORUM</a>
+        </li>
+         <li style="float:right;">
+          <a class="sg-a-header"style="padding-right: 32px" href="#">PROTOCOL<img src="icons/caret-down-fill.svg"style="height: 15px;margin-top: 6px;padding-left: 1px;" /></a>
+          <ul style="right: 0px;" class="nav-dropdown">
+            <li>
+              <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px;width: 348px;" href="#">CARTAGENA PROTOCOL</a>
+            </li>
+            <li>
+              <a class="sg-a-header" style="border-bottom-right-radius: 8px;border-bottom-left-radius: 8px;padding-bottom: 32px;width: 348px"href="#">SUPPLEMENTARY PROTOCOL</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+</section>
+<div class="JumboHeader">
+        
+            <div class="top-text-info">
+            <p class="headlineText">
+                The Biosafety Clearing-House (BCH) is an online platform for exchanging information on Living Modified
+                Organisms (LMOs) and a key tool for facilitating the implementation of the Cartagena Protocol on
+                Biosafety.
+            </p>
+          </div>
+            <div class="row-home">
+                
+                    <div class="card" style="margin-right: 2.70%">
+                      <div class="img-top-card"><img  src="icons/Lightbulb (1).svg" style="height: 60px; margin-top: 45%; margin-left: 30%;" /></div>
+                      <div class="card-body">
+                             <h5 class="card-title"> Learn about the BCH</h5>
+                            <p class="card-text" >About the BCH <br> About the Protocol <br> Capacity building <br>FAQs</br></p>
+                        
+                        </div>
+                          <div class="card-footer">
+                            <a class="cardFooterLink pull-right" href="#">Get Started <img id="sg-img3" src="icons/Vector (1).svg"> </a>
+                        </div>
+                    </div>
+                
+            <div class="card" style="margin-right: 2.70%">
+                      <div class="img-top-card"><img  src="icons/search_dna (1).svg" style="height: 60px; margin-top: 45%; margin-left: 30%;" /></div>
+                        <div class="card-body">
+                             <h5 class="card-title"> Search records</h5>
+                            <p class="card-text" style="   " >Take the Tour <br> Help using the search <br>Registries: LMO-Organism-Gene  <br> National Reports</p>
+                            
+                        </div>
+                            <div class="card-footer">
+                            <a class="cardFooterLink pull-right" href="#">SEARCH <img id="sg-img3" src="icons/Vector (1).svg"> </a>
+                        </div>
+                    </div>  <div class="card" style="">
+                      <div class="img-top-card"><img  src="icons/Upload (1).svg" style="height: 60px; margin-top: 45%;margin-left: 30%;" /></div>
+                        <div class="card-body">
+                             <h5 class="card-title"> Submit records</h5>
+                            <p class="card-text" style=" " >
+                               Take the Tour<br> Help submitting records</p>
+                             
+                        </div>
+                            <div class="card-footer">
+                            <a class="cardFooterLink pull-right" href="#">SUBMIT <img id="sg-img3" src="icons/Vector (1).svg"> </a>
+                        </div>
+                    </div>
+          </div>  
+                
+              <div class="card-footer2">
+                            <a  class="cardFooterLink3" href="#"> EXPLORE THE BCH MAP  <img id="sg-img4" src="icons/Vector (2).svg">  </a>
+                           
+                       </div>
+                    
+
+        
+    </div>
+    </div>
+    </div>
+<div class="Jumbomap">
+                   <div class="map">
+                <!-- <div class="map-filters-bg" ></div> -->
+                <div class="body-container" style="width: 256px;">
+                <div class="map-container"  style="height: 450px;">
+                        <div class="map-container-header">
+                            <div class="row col-xs-12">
+                                
+                                <h3 class="custom-title" style="margin-top:10px;margin-bottom:5px;width:60%;display:inline;">
+                                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?tab=nationalRecords" style="color: rgb(255, 255, 255);" class="ng-scope">
+                                        <!-- ngIf: !currentCountry.code --><span ng-if="!currentCountry.code" class="ng-scope" style="color:#00405C;padding-left: 16px"> National Records </span><!-- end ngIf: !currentCountry.code -->
+                                    </a><!-- end ngIf: !currentCountry.code -->
+                                    <!-- ngIf: currentCountry.code -->
+                                </h3>
+
+                            </div>
+                        </div>
+                        <div class="map-filters-bg map-container-mainbody bch-height" ng-class="{'reduced-height':reduceDetailsHeight, 'bch-height':isBCH}" style="">
+                            <!-- ngIf: isBCH && currentCountry --><div ng-if="isBCH &amp;&amp; currentCountry" class="ng-scope" style=""> 
+                                <div lang="en">
+    
+    <!-- ngIf: currentCountry.code -->
+    <table class="table table-map table-condensed" style="display: block;overflow-x: auto;">
+            <tbody><!-- ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">95</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=focalPoint&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">National Focal Points</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">488</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=authority&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Competent National Authority</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">35</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=supplementaryAuthority&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Supplementary Protocol Competent Authority</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">2622</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=biosafetyLaw&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Biosafety Law, Regulation, Guidelines and Agreements</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">2622</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=biosafetyDecision&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Decisions</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">2427</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=nationalRiskAssessment&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Risk Assessment generated by a regulatory process</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">180</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=database&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">National Biosafety Website or Database</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">382</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=cpbNationalReport4&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Biosafety Expert</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">169</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=cpbNationalReport3&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Country Profile for
+Biosafety Clearing-House</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">6</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=cpbNationalReport3&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">4th National Reports on the Implementation of the Cartagena Protocol on Biosafety</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas --><tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="badge bg-black ng-binding" ng-bind="schema.count">6</span>
+                </td>
+                <td>
+                    <!-- ngIf: currentCountry.code -->
+                    <!-- ngIf: !currentCountry.code --><a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=cpbNationalReport3&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">3rd National Reports on the Implementation of the Cartagena Protocol on Biosafety</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr><!-- end ngRepeat: schema in countryMapScope.currentCountry.schemas -->
+        </tbody></table>
+</div>
+
+                            </div><!-- end ngIf: isBCH && currentCountry -->   
+                            <!-- ngIf: isABS && currentCountry -->               
+                        </div>
+                        
+                    </div>
+            </div>
+         </div>
+         <div class="map-container-footer">
+          <div class="sg-bottom-map-numbers">
+             <tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="map-number1 bg-black ng-binding" ng-bind="schema.count" style="padding-top:4px;padding-left:7px;padding-right: 7px;padding-bottom: 4px;">172</span>
+                </td>
+                <td>
+                    <a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=cpbNationalReport3&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Parties to the Cartagena Protocol</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr>
+          </div>
+              <div class="sg-bottom-map-numbers">
+             <tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="map-number2 bg-black ng-binding" ng-bind="schema.count" style="padding-top:4px;padding-left:7px;padding-right: 7px;padding-bottom: 4px;">200</span>
+                </td>
+                <td>
+                    <a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=cpbNationalReport3&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Ratified, not yet Party</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr>
+          </div>
+            <div class="sg-bottom-map-numbers">
+             <tr ng-repeat="schema in countryMapScope.currentCountry.schemas" style="border:none;" class="ng-scope">
+                <td>
+                    <span class="map-number3 bg-black ng-binding" ng-bind="schema.count" style="padding-top:4px;padding-left:7px;padding-right: 7px;padding-bottom: 4px;">26</span>
+                </td>
+                <td>
+                    <a rel="noopener" ng-if="!currentCountry.code" translation-url="" href="/en/search?schema=cpbNationalReport3&amp;tab=nationalRecords" style="color:#fff" class="ng-scope">
+                        <span ng-bind="schema.title | lstring:locale" class="sg-binding">Non-Parties</span>
+                    </a><!-- end ngIf: !currentCountry.code -->
+                </td>
+            </tr>
+          </div>
+        </div>
+        </div>
+
+        <h3 style="padding-left: 135px;padding-top: 5%;    font-size: 30px;  color: black;  font-family: 'Roboto';  text-transform: uppercase;  font-weight: bold;">ANNOUNCEMENTS</h3>
+       <div class="announcment-body">
+        <div class="announcment">
+ <div class="announcment-image" ><div class="time-block">18 Aug 2021</div></div>
+  <div class="announcment-container" style="padding: 10px">
+    <h3 style="font-size: 24px;color: black;font-family: 'Roboto';margin-top: 0px;margin-right: 32px;"><b >TITLE: Augue pellentesque
+sit.</b></h3> 
+    <p style="    font-size: 18px;">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Vulputate dui, felis nisl nunc
+turpis...</p> 
+  </div>
+</div>
+
+<div class="announcment">
+ <div class="announcment-image" ><div class="time-block">18 Aug 2021</div></div>
+  <div class="announcment-container" style="padding: 10px">
+    <h3 style="font-size: 24px;color: black;font-family: 'Roboto';margin-top: 0px;margin-right: 32px;"><b >TITLE: Augue pellentesque
+sit.</b></h3> 
+    <p style="    font-size: 18px;">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Vulputate dui, felis nisl nunc
+turpis...</p> 
+  </div>
+</div>
+
+
+    <div class="announcment">
+ <div class="announcment-image" ><div class="time-block">18 Aug 2021</div></div>
+  <div class="announcment-container" style="padding: 10px">
+    <h3 style="font-size: 24px;color: black;font-family: 'Roboto';margin-top: 0px;margin-right: 32px;"><b >TITLE: Augue pellentesque
+sit.</b></h3> 
+    <p style="    font-size: 18px;">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Vulputate dui, felis nisl nunc
+turpis...</p> 
+  </div>
+</div>
+
+</div>
+ <div class="announcment-body">
+ <div class="announcment">
+ <div class="announcment-image" ><div class="time-block">18 Aug 2021</div></div>
+  <div class="announcment-container" style="padding: 10px">
+    <h3 style="font-size: 24px;color: black;font-family: 'Roboto';margin-top: 0px;margin-right: 32px;"><b >TITLE: Augue pellentesque
+sit.</b></h3> 
+    <p style="    font-size: 18px;">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Vulputate dui, felis nisl nunc
+turpis...</p> 
+  </div>
+</div>
+
+    <div class="announcment">
+ <div class="announcment-image" ><div class="time-block">18 Aug 2021</div></div>
+  <div class="announcment-container" style="padding: 10px">
+    <h3 style="font-size: 24px;color: black;font-family: 'Roboto';margin-top: 0px;margin-right: 32px;"><b >TITLE: Augue pellentesque
+sit.</b></h3> 
+    <p style="    font-size: 18px;">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Vulputate dui, felis nisl nunc
+turpis...</p> 
+  </div>
+</div>
+
+
+       <div class="announcment">
+ <div class="announcment-image" ><div class="time-block">18 Aug 2021</div></div>
+  <div class="announcment-container" style="padding: 10px">
+    <h3 style="font-size: 24px;color: black;font-family: 'Roboto';margin-top: 0px;margin-right: 32px;"><b >TITLE: Augue pellentesque
+sit.</b></h3> 
+    <p style="    font-size: 18px;">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit. Vulputate dui, felis nisl nunc
+turpis...</p> 
+  </div>
+</div>
+</div>
+<div class="see-more" ><a href="#" style="float: right; margin-right: 32px;color: #4F4F4F; font-size: 20px"><img src="icons/Vector.png" style=" padding-right: 5px;padding-bottom: 5px;">See more </a></div>
+ <h3 style="padding-bottom: 3%;padding-left: 10%;font-size: 30px;color: black;font-family: 'Roboto';text-transform: uppercase;font-weight: bold;">NATIONAL RECORDS</h3>
+<div class="table-container">
+<table class="table1">
+
+  <tr>
+    <td style="height: 170px;"><div class="table-clock"><div class="recent-block">Recently added</div><div class="update-block">Recently updated</div><img class="sg-flag-img" src="flags/4x3/ad.svg"> <h6 class="sg-table-time" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 170px;"><div class="table-clock"><div class="no-recent-block"></div><div class="no-update-block"></div><img class="sg-flag-img" src="flags/4x3/ad.svg"> <h6 class="sg-table-time" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+  </tr>
+   <tr>
+    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>
+   <tr>
+    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>
+    <tr>
+    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>
+  <tr>
+    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>
+
+  <th></th>
+  <th>
+   <a href="#" style="float: right; margin-right: 32px;color: #4F4F4F; font-size: 20px"><img src="icons/Vector.png" style=" padding-right: 5px;padding-bottom: 0px">See more </a>
+  </th>
+  </table>
+</div>
+  <h3 style="padding-bottom: 3%;padding-top:3%;padding-left: 10%;font-size: 30px;color: black;font-family: 'Roboto';text-transform: uppercase;font-weight: bold;">REFERENCE RECORDS</h3>
+<div class="table-container2">
+<table class="table1">
+
+  <tr>
+     <td style="height: 170px;"><div class="table-clock"><div class="recent-block">Recently added</div><div class="update-block">Recently updated</div> <h6 style="margin-left:0px;" class="sg-table-time" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 170px;"><div class="table-clock"><div class="no-recent-block"></div><div class="no-update-block"></div><h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>
+  <tr>
+   <td style="height: 119px;"><div class="table-clock"> <h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"> <h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>
+   <tr>
+  <td style="height: 119px;"><div class="table-clock"> <h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"> <h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>  <tr>
+ <td style="height: 119px;"><div class="table-clock"> <h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"> <h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>  <tr>
+   <td style="height: 119px;"><div class="table-clock"> <h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><h6 class="sg-table-time3" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table2" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table2" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+   
+  </tr>
+  <th></th>
+  <th>
+ <a href="#" style="float: right; margin-right: 32px;color: #4F4F4F; font-size: 20px"><img src="icons/Vector.png" style=" padding-right: 5px;padding-bottom: 0px">See more </a>
+  </th>
+  </table >
+</div>
+
+  </body> 
+
+
+      
+
+            
+              <div class="footer-mooter">
+               <div class="row hidden-xs">
+                    <div class="col-sm-6" style="width: 70%">
+                        <h4 class="sg-h4-footer">Quick Links</h4>
+                        <hr style="border-color: #fa6938!important;">
+
+                        <div class="col-xs-6" style="margin:0;padding:0;">
+                            <ul style="padding-left: 0px; list-style: none;">
+                                <li> <a class="sg-a-footer-font" href="https://absch.cbd.int/" >About the BCH</a></li>
+                                <li> <a class="sg-a-footer-font" href="https://bch.cbd.int/" >About the Cartagena Protoco</a></li>
+                                <li> <a class="sg-a-footer-font" href="https://chm.cbd.int/" >Supplementary Protocol</a></li>
+                                <li> <a class="sg-a-footer-font" href="/contributions">Sign Up for an Account</a></li>
+                                <li> <a class="sg-a-footer-font" href="https://www.cbd.int/countries/">Sign In</a></li>
+                                <li style="padding-top: 30px;"> <a class="sg-a-footer-font" href="/meetings/" >Search records</a></li>
+                                <li> <a class="sg-a-footer-font" href="/nbsap" >Submit records</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6" style="margin:0;padding:0;">
+                            <ul style="list-style: none;">
+                                <li><a class="sg-a-footer-font" href="/nfp" >Registries: LMO-Organism-Gene</a></li>
+                                <li><a class="sg-a-footer-font" href="/reports" >Country profiles</a></li>
+                                <li><a class="sg-a-footer-font" href="/news/" >National reports</a></li>
+                                <li style="padding-top: 30px;"><a class="sg-a-footer-font" href="/notifications/"  >Forums & Portals</a></li>
+                                <li style="padding-top: 30px;"><a class="sg-a-footer-font" href="/parties" >BCH news & announcements</a></li>
+                                
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-6" style="width: 30%">
+                        <h4 class="sg-h4-footer">Need help?</h4>
+                        <hr style="border-color: #fa6938!important;">
+
+                        <ul  style="list-style: none;padding-left: 0px">
+                            <li><a class="sg-a-footer-font " href="/topic/business-women-youth-and-other-stakeholders" >Knowledge Base</a></li>
+                            <li><a class="sg-a-footer-font" href="/topic/climate-change" >FAQs</a></li>
+                            <li><a class="sg-a-footer-font" href="/topic/poverty-reduction" >Training materials</a></li>
+                            <li><a class="sg-a-footer-font" href="/topic/food" >Training videos</a></li>
+                            <li><a class="sg-a-footer-font" href="/topic/water" >Training site</a></li>
+                            <li style="padding-top: 30px;"><a class="sg-a-footer-font" href="/topic/indigenous-peoples-and-local-communities">Contact us at: bch@cbd.int</a></li>
+                            <li><a class="sg-a-footer-font" href="/topic/indigenous-peoples-and-local-communities">Chat with us</a></li>
+                        </ul>
+                    </div>
+                 
+                  </div>
+                <hr style="border-color: #fa6938!important;  margin-top: 40px;">
+                <h6 class="footer-footer-h6">BCH</h6>
+                <h7 class="footer-footer-h7" style="display: inline;">BIOSAFETY CLEARING-HOUSE</h7>
+                <a href="#" class="sg-a-footer-font" style=" padding-left: 9%;;">Subscribe to our email alerts </a>
+                <a href="#" class="sg-a-footer-font" style="padding-left: 4%">Subscribe to our Newsletter </a>
+                <a href="" class="sg-a-footer-font"style="padding-left: 2%;padding-top: 1.5%;float: right;"><img src="icons/Facebook.png"></a>
+                <a href="" class="sg-a-footer-font"style="padding-left: 2%;padding-top: 1.5%;float: right;"><img src="icons/Twitter.png"></a>
+                <a href="" class="sg-a-footer-font"style="padding-top: 1.5%;;float: right;"><img src="icons/Youtube.png"></a>
+              </div>
+
+            
+
+</html>
