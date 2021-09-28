@@ -42,10 +42,10 @@ height: 100px
 }
 #CBD-Branding .locale-menu {
   position: absolute;
-    right: 4px;
-    width: 244px;
+    right: 4px!important;
+    width: 244px!important;
     float: right;
-    top: 6.1%;
+    top: 1%;
     left: inherit;
     height: 305px;
 }
@@ -141,7 +141,7 @@ padding-left: 6px;
     white-space: nowrap;
     vertical-align: middle;
     background-color: #00405C;
-    border-radius: 5px;
+    border-radius: 5px!important;
 }
 .badge1 {
     display: inline-block;
@@ -983,5 +983,5 @@ color: #FFFFFF;
   height: 770px;
 }
 .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
-  padding:1px;
+  padding:1px!important;
 }
