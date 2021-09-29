@@ -2,7 +2,7 @@
   
 
   background-color: white;
-  height: 24%;
+  height: 20.3vh;
   color: white;
   
 }
@@ -66,7 +66,7 @@ color: black;
       color: black;
     font-size: 20px;
     font-weight: 300;
-    text-transform: uppercase;
+   
     padding-left: 40px;
     padding-bottom: 0px;
     text-decoration: underline;
@@ -172,12 +172,12 @@ height: 2px;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 44px;
+font-size: 64px;
 line-height: 75px;
 letter-spacing: 0.05em;
   padding-left: 38px;
   position: relative;
-  bottom: 9px;
+top: 1vh;
 
 }
 .sg-h4-header {
@@ -186,14 +186,14 @@ letter-spacing: 0.05em;
  font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 20px;
+font-size: 24px;
 line-height: 149.38%;
  position: relative;
- bottom: 9px;
+top: 1vh;
 }
 
 .sg-nav{
-  padding-top: 1%;
+  padding-top: 0.3%;
   height: 24%
 }
 
@@ -203,7 +203,7 @@ nav.sg-nav1 ul {
  list-style: none;
     margin-bottom: 4px;
     position: absolute;
-    top: 2.1%;
+    top: 16vh;
 }
 nav.sg-nav1 ul li {
   float: left;
@@ -229,7 +229,7 @@ line-height: 150%;
 /* or 24px */
 
 text-decoration-line: underline;
-text-transform: uppercase;
+
 }
 
 nav.sg-nav1 ul li ul li {
@@ -404,7 +404,7 @@ color: #FFFFFF;
     line-height: 149.38%;
 }
 .sg-top-top{
-  height: 540px;
+  height: 100vh;
 }
 .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th{
   padding:1px!important;
