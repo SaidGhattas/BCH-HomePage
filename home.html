@@ -4,15 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="header.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="ch-head.css">
-  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+
+ 
       <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&amp;family=Roboto:wght@400;500;700&amp;display=swap"
         rel="stylesheet">
@@ -84,16 +79,26 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="body.css">
+     <link rel="stylesheet" type="text/css" href="ch-head.css">
+     <link rel="stylesheet" type="text/css" href="header-footer.css">
   <script>
 function myFunction() {
+{
+  var x = document.getElementById("mykLinks");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
   var x = document.getElementById("myLinks");
   if (x.style.display === "inline") {
     x.style.display = "none";
   } else {
     x.style.display = "inline";
   }
-}
+}}
 </script>
 <script>
 (function($) { 
@@ -124,8 +129,9 @@ function myFunction() {
 
 <!-- Top Navigation Menu -->
 <div class="sg-nav">
-<a href="#home" class="active" style="color:#29a329;padding-left: 8px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">Convention on Biological Diversity </a>
+<a href="#home" id="mykLinks" class="active" style="display: inline;color:#29a329;padding-left: 8px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">Convention on Biological Diversity </a>
   <div id="myLinks" >
+    <a href="#Cartagena Protocol"style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">The Convention</a>
     <a href="#Cartagena Protocol"style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">Cartagena Protocol</a>
     <a href="#Nagoya Protocol" style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;">Nagoya Protocol</a>
     <a href="#Programmes" style="padding-left: 16px;font-style: normal;font-weight: normal;font-size: 20px;line-height: 140%;";>Programmes</a>
@@ -139,13 +145,13 @@ function myFunction() {
   <a href="#"><img src="icons/megaphone-fill.svg" style="margin-top: 4px;padding-right: 15px;" /></a>
 
 
-  <a href="#"><img src="icons/question-lg.svg" style="margin-top: 4px;" /></a>
+  <a href="#"><img src="icons/question-lg.svg" style="margin-top: 4px;padding-right: 10px" /></a>
 
 <div class="lang">
     <locale-header class="rp-lang ng-isolate-scope" id="CBD-Branding"><div hover-effect=".dropdown-menu" class="locale ng-isolate-scope" id="CBD-Branding" lang="en">
     <a rel="noopener" ng-href="#" class="set-languages" data-toggle="dropdown" href="#">
       <span class="badge1 ">
-        <span ng-bind="currentLanguage|uppercase" class="ng-binding" style="color: black;font-size: 16px;">EN</span><img src="icons/caret-down-fill.svg"  style="height: 15px;padding-left: 1px;" />
+        <span ng-bind="currentLanguage|uppercase" class="ng-binding" style="position: relative;bottom: 3px;color: black;font-size: 16px;">EN</span><img src="icons/caret-down-fill.svg"  style="height: 15px;padding-left: 1px;position: relative;bottom: 2px" />
       </span>
     </a>
     <style>
@@ -166,7 +172,7 @@ function myFunction() {
 </div></locale-header>
 </div>
 
-   <a href="#"> <img src="icons/bell-fill.svg" style="height: 19px;padding-right: 20px;margin-top: 4px;" /></a>
+   <a href="#"> <img src="icons/bell-fill.svg" style="height: 19px;padding-right: 10px;margin-top: 4px;" /></a>
 
  <a href="#"><img src="icons/person-fill.svg" style=" padding-top: 0px;padding-right: 10px;padding-bottom: 3px;padding-left: 10px;;height: 28px;"/>
  </a>
@@ -184,14 +190,14 @@ function myFunction() {
       <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
       <ul class="nav-list">
         <li>
-          <a class="sg-a-header" style="    padding-right: 0px; margin-left: 5px;position: relative;right: 0px;" href="#">HOME</a>
+          <a class="sg-a-header" style="    padding-right: 0px; margin-left: 2px;position: relative;right: 0px;" href="#">HOME</a>
         </li>
         <li>
           <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#">ABOUT</a>
         </li>
           <li>
-          <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!" >SEARCH<img src="icons/caret-down-fill.svg"  style="height: 15px;margin-top: 6px;padding-left: 1px;" /></a>
-     <ul class="nav-dropdown">
+          <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!" >SEARCH<i class="fa fa-caret-down"></i></a>
+     <ul style="width: 282px;" class="nav-dropdown">
             <li>
               <a class="sg-a-header"style="font-weight: 500;font-size: 18px;border-top-right-radius: 8px;border-top-left-radius: 8px" href="#" >RECORDS</a>
             </li>
@@ -216,10 +222,10 @@ function myFunction() {
           <a class="sg-a-header" style="  padding-right: 0px;margin-left: 32px;" href="#!">SUBMIT</a>
         </li>
         <li>
-          <a class="sg-a-header" href="#" style="  padding-right: 0px;margin-left: 32px;">COUNTRY PROFILES<img src="icons/caret-down-fill.svg"  style="height: 15px; margin-top: 6px; padding-left: 1px;"/></a>
+          <a class="sg-a-header" href="#" style="  padding-right: 0px;margin-left: 32px;">COUNTRY PROFILES<i class="fa fa-caret-down"></i></a>
           <ul class="nav-dropdown" style="width: 380px">
          
-            <ul class="country-list-dd" style="  border-radius: 10px;max-height:340px;overflow-y:scroll;max-width: 400px;    margin-bottom: 0px; ">
+            <ul class="country-list-dd" style="  ;max-height:340px;overflow-y:scroll;max-width: 400px;    margin-bottom: 0px; ">
           <!-- ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border: 0px !important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                   <input type="text" placeholder="&#xF002; Search countries" style="    font-family: Roboto, FontAwesome;font-style: normal;font-weight: normal; width: 320px; margin-left: 24px;margin-bottom: 10px;margin-top: 4.167%"   
 class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countrySearch($event)" ng-model="countrySearchQuery">
@@ -1383,7 +1389,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                     <a  class="sg-a-header-nation" translation-url=""    ng-href="/countries/VE" href=" #countries/VE">
                                         <span class="sg-a-header-a" ng-class="{'color-party': c.isParty, 'color-non-party':!c.isParty}">
-                                            Venezuela (Bolivarian Republic of)
+                                            Venezuela (Republic of people)
                                         </span>
                                     </a>
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border:0!important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
@@ -1422,8 +1428,8 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
           </ul>
         </li>
       <li>
-          <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!">HELP<img src="icons/caret-down-fill.svg"  style="height: 15px; margin-top: 6px;padding-left: 1px;" /></a>
-     <ul class="nav-dropdown">
+          <a class="sg-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!">HELP<i class="fa fa-caret-down"></i></a>
+     <ul class="nav-dropdown" style="width: 282px">
             <li>
               <a class="sg-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px;font-weight: 500;font-size: 18px" href="#">KNOWLEDGE BASE</a>
             </li>
@@ -1449,8 +1455,8 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
           <a class="sg-a-header" style="  padding-right: 0px;margin-left: 32px;" href="#">FORUM</a>
         </li>
          <li style="float:right;">
-          <a class="sg-a-header"style="padding-right: 47px" href="#">PROTOCOL<img src="icons/caret-down-fill.svg"style="height: 15px;margin-top: 6px;padding-left: 1px;" /></a>
-          <ul style="right: 0px;" class="nav-dropdown">
+          <a class="sg-a-header1"style="margin-right: 47px" href="#">PROTOCOL<i class="fa fa-caret-down"></i></a>
+          <ul style="right: 0px; top:110%!important;width: 350px" class="nav-dropdown">
             <li>
               <a class="sg-a-header"style="font-weight: 500;font-size: 18px;border-top-right-radius: 8px;border-top-left-radius: 8px;width: 348px;" href="#">CARTAGENA PROTOCOL</a>
             </li>
@@ -1478,7 +1484,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
             <div class="row-home">
                 
                     <div class="card" style="margin-right: 2.70%">
-                      <div class="img-top-card"><img  src="icons/Lightbulb (1).svg"  /></div>
+                      <div class="img-top-card"><img  src="icons/Lightbulb.svg"  /></div>
                       <div class="card-body">
                              <h5 class="card-title"> Learn about the BCH</h5>
                             <p class="card-text" >About the BCH <br> About the Protocol <br> Capacity building <br>FAQs</br></p>
@@ -1490,7 +1496,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                     </div>
                 
             <div class="card" style="margin-right: 2.70%">
-                      <div class="img-top-card"><img  src="icons/search_dna (1).svg"  /></div>
+                      <div class="img-top-card"><img  src="icons/search_dna.svg"  /></div>
                         <div class="card-body">
                              <h5 class="card-title"> Search records</h5>
                             <p class="card-text" style="   " >Take the Tour <br> Help using the search <br>Registries: LMO-Organism-Gene  <br> National Reports</p>
@@ -1500,7 +1506,7 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                             <a class="cardFooterLink pull-right" href="#"> Search  <i class="fa fa-arrow-right"></i> </a>
                         </div>
                     </div>  <div class="card" style="">
-                      <div class="img-top-card"><img  src="icons/Upload (1).svg"  /></div>
+                      <div class="img-top-card"><img  src="icons/Upload.svg"  /></div>
                         <div class="card-body">
                              <h5 class="card-title"> Submit records</h5>
                             <p class="card-text" style=" " >
@@ -1780,29 +1786,29 @@ turpis...</p>
   </div>
 </div>
 </div>
-<div class="see-more" ><a href="#" style="float: right; margin-right: 32px;color: #4F4F4F; font-size: 20px"><img src="icons/Vector.png" style=" padding-right: 5px;padding-bottom: 5px;">See more </a></div>
+<div class="see-more" ><a href="#" style="float: right; margin-right: 32px;color: #4F4F4F; font-size: 20px"><img src="icons/plus.png" style=" padding-right: 5px;padding-bottom: 5px;">See more </a></div>
  <h3 style="padding-bottom: 3%;padding-left: 10%;font-size: 30px;color: black;font-family: 'Roboto';text-transform: uppercase;font-weight: bold;">NATIONAL RECORDS</h3>
 <div class="table-container">
 <table class="table1">
 
   <tr>
-    <td style="height: 170px;"><div class="table-clock"><div class="recent-block">Recently added</div><div class="update-block">Recently updated</div><img class="sg-flag-img" src="flags/4x3/ad.svg"> <h6 class="sg-table-time" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
-    <td style="height: 170px;"><div class="table-clock"><div class="no-recent-block"></div><div class="no-update-block"></div><img class="sg-flag-img" src="flags/4x3/ad.svg"> <h6 class="sg-table-time" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 170px;"><div class="table-clock"><div class="recent-block">Recently added</div><div class="update-block">Recently updated</div><i class="sg-flag-img flag-icon flag-icon-be"></i> <h6 class="sg-table-time" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 170px;"><div class="table-clock"><div class="no-recent-block"></div><div class="no-update-block"></div><i class="sg-flag-img flag-icon flag-icon-be"></i> <h6 class="sg-table-time" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
   </tr>
    <tr>
-    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 119px;"><div class="table-clock"><i class="sg-flag-img2 flag-icon flag-icon-be"></i> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><i class="sg-flag-img2 flag-icon flag-icon-be"></i><h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
    
   </tr>
    <tr>
-    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 119px;"><div class="table-clock"><i class="sg-flag-img2 flag-icon flag-icon-be"></i> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><i class="sg-flag-img2 flag-icon flag-icon-be"></i> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
    
   </tr>
     <tr>
-    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 119px;"><div class="table-clock"><i class="sg-flag-img2 flag-icon flag-icon-be"></i> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><i class="sg-flag-img2 flag-icon flag-icon-be"></i> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
    
   </tr>
   <tr>
-    <td style="height: 119px;"><div class="table-clock"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><img class="sg-flag-img2" src="flags/4x3/ad.svg"> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
+    <td style="height: 119px;"><div class="table-clock"><i class="sg-flag-img2 flag-icon flag-icon-be"></i> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td> <td style="height: 119px;"><i class="sg-flag-img2 flag-icon flag-icon-be"></i> <h6 class="sg-table-time2" >28 Jun 2021-Spain</h6><h6  class="sg-h6-table" >Countries' Decisions or any other communications</h6></div><h9 class="sg-h9-table" >TITLE: Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque</h9></td>
    
   </tr>
 
