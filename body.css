@@ -34,7 +34,7 @@
     padding-bottom: 3%;
     padding-top: 3%;
     font-family: 'Roboto';
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     color: white !important;
   }
@@ -122,7 +122,7 @@ border-radius: 10px!important;
     width: 100%;
     position: absolute;
     padding: 1.5%;
-    top: 340px;
+    
 }
 .new-ch-card-footer {
   height: 18.9%;
@@ -251,7 +251,7 @@ transform: translate(-50%, -50%);
   padding-left: 8px;
 padding-right: 8px;
   background-color: #FFFFFFB2;
-  height: 462px;
+  height: 607px;
   color: white;
   border-radius: 10px;  
   float: right;
@@ -335,7 +335,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 14px;
 line-height: 16px;
-font-family: Ninuto;
+
 }
 
 .new-ch-announcment {
@@ -343,7 +343,7 @@ font-family: Ninuto;
     transition: 0.3s;
     float: left;
     width: 29%;
-    margin-left: 30px;
+    margin-right: 2.70%;
     height: 400px;
     background-color: white;
     background-clip: border-box;
@@ -371,7 +371,7 @@ font-family: Ninuto;
   display: table;
   clear: both;
   width: 100%;
-    padding-left: 7%;
+    padding-left: 9.37%;
 
 }
 
@@ -433,7 +433,7 @@ border-top-right-radius: 5px;
     margin-right: 50px;
 }
 .new-ch-map-page{
-    height: 770px;
+    height: 700px;
     background-color: #E1F0F5;
 
   background-position: center; /* Center the image */
@@ -442,7 +442,7 @@ border-top-right-radius: 5px;
 
   }
   .new-ch-map{
-    height: 710px;
+    height: 574px;
         padding: 15px;
   }
   .new-ch-table-NATIONAL-RECORDS-container{
@@ -462,7 +462,7 @@ border-top-right-radius: 5px;
     margin-left: 30px;
     color: #D0D0D0;
     font-size: 14px;
-    font-family: Nuninto;
+  
     font-weight: normal;
     height: 10px;
   }
@@ -471,7 +471,7 @@ border-top-right-radius: 5px;
     margin-left: 30px;
     color: #D0D0D0;
     font-size: 14px;
-    font-family: Nuninto;
+  
     font-weight: normal;
     height: 10px;
     margin-top: 0px;
@@ -479,7 +479,7 @@ border-top-right-radius: 5px;
   .new-ch-h6-table{
    color: #00405C;
     margin-left: 30px;
-    font-family: Nunito;
+
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
@@ -488,7 +488,7 @@ line-height: 120%;
   .new-ch-h6-table-REFERENCE-RECORDS{
    color: #00405C;
     
-  font-family: Nunito;
+
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
