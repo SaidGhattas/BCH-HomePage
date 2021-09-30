@@ -1,5 +1,5 @@
 
-.new-ch-body-body{
+.new-ch-full-page{
   color: #333;
     background-color: #F8F8F8;
 }
@@ -26,18 +26,32 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 
   }
+  @media screen and (min-height: 701px){
   .new-ch-top-text-info{
      height: 25%;
     padding-left: 9.37%;
     padding-right: 9.37%;
-    padding-bottom: 10%;
+    padding-bottom: 3%;
     padding-top: 3%;
     font-family: 'Roboto';
     font-size: 30px;
     font-weight: bold;
     color: white !important;
   }
-  
+}
+  @media screen and (max-height: 700px){  
+  .new-ch-top-text-info{
+     height: 25%;
+    padding-left: 9.37%;
+    padding-right: 9.37%;
+    padding-bottom: 10%;
+    padding-top: 2%;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: bold;
+    color: white !important;
+  }
+ } 
 .new-ch-headlineText {
 
 }
@@ -120,6 +134,7 @@ border-radius: 10px!important;
     bottom: 0px;
     width: 100%;
 }
+@media screen and (min-height:601px){
 .new-ch-card-footer2 {
   
          height: 50px;
@@ -129,7 +144,21 @@ border-radius: 10px!important;
     width: 26%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
+    margin-top: 6vh;
+}
+}
+@media screen and (max-height:600px){
+.new-ch-card-footer2 {
+  
+         height: 50px;
+    background-color: #00405C;
+    border-radius: 8px;
+    
+    width: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+}
 }
 
 .new-ch-cardFooterLink {
@@ -137,7 +166,7 @@ border-radius: 10px!important;
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin-top: 10px;
+    margin-top: 7px;
   
 
 }
@@ -403,7 +432,7 @@ border-top-right-radius: 5px;
     color: #4F4F4F;
     margin-right: 50px;
 }
-.new-ch-Jumbomap{
+.new-ch-map-page{
     height: 770px;
     background-color: #E1F0F5;
 
@@ -416,13 +445,13 @@ border-top-right-radius: 5px;
     height: 710px;
         padding: 15px;
   }
-  .new-ch-table-container{
+  .new-ch-table-NATIONAL-RECORDS-container{
     height: 700px;
     padding-left: 8%;
     padding-right: 7%;
 
   }
-  .new-ch-table-container2{
+  .new-ch-table-REFERENCE-RECORDS-container{
     height: 750px;
     padding-left: 8%;
     padding-right: 7%;
@@ -456,7 +485,7 @@ font-weight: 600;
 font-size: 14px;
 line-height: 120%;
   }
-  .new-ch-h6-table2{
+  .new-ch-h6-table-REFERENCE-RECORDS{
    color: #00405C;
     
   font-family: Nunito;
@@ -465,7 +494,7 @@ font-weight: 600;
 font-size: 14px;
 line-height: 120%;
   }
-  .new-ch-h9-table2{
+  .new-ch-h9-table-REFERENCE-RECORDS{
     color: black;
     font-size: 18px;
     font-family: 'Roboto';
@@ -483,7 +512,7 @@ line-height: 120%;
     font-weight: normal;
     height: 10px;
 }
-table.new-ch-table1 {
+table.new-ch-table-NATIONAL-RECORDS {
   font-family: 'Roboto';
       background-color: white;
   border-collapse: collapse;
@@ -496,7 +525,7 @@ table.new-ch-table1 {
 
 
 }
-table.new-ch-table1 td{
+table.new-ch-table-NATIONAL-RECORDS td{
      border-bottom: 2px solid #D0D0D0  ;
      margin-right: 10px;
      border-right: 32px solid white;
@@ -504,14 +533,14 @@ table.new-ch-table1 td{
      height: 119px;
 }
 
-table.new-ch-table1 td, th {
+table.new-ch-table-NATIONAL-RECORDS td, th {
   
   text-align: left;
  
  width: 512px;
 }
 
-table.new-ch-table1 tr:nth-child(even) {
+table.new-ch-table-NATIONAL-RECORDS tr:nth-child(even) {
 
 }
 
@@ -569,11 +598,11 @@ table.new-ch-table1 tr:nth-child(even) {
 
   }
  
-table.new-ch-table1 tr a{
+table.new-ch-table-NATIONAL-RECORDS tr a{
   color: black;
 
 }
-table.new-ch-table1 th{
+table.new-ch-table-NATIONAL-RECORDS th{
    height: 40px;  
 }
 
