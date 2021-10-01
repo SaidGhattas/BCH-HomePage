@@ -44,8 +44,8 @@
      height: 25%;
     padding-left: 9.37%;
     padding-right: 9.37%;
-    padding-bottom: 10%;
-    padding-top: 2%;
+    padding-bottom: 4.1%;
+    padding-top: 2.2%;
     font-family: 'Roboto';
     font-size: 22px;
     font-weight: bold;
@@ -255,7 +255,7 @@ padding-right: 8px;
   color: white;
   border-radius: 10px;  
   float: right;
-  margin-top: 16px;
+
       box-shadow: 0px 5px 6px 4px rgb(0 0 0 / 20%);
 }
 .party-status {
@@ -302,6 +302,8 @@ content: "";
     display: table;
     clear: both;
     width: 100%;
+    position: relative;
+    bottom: 3vh
 
 }
 
@@ -337,14 +339,17 @@ font-size: 14px;
 line-height: 16px;
 
 }
+.new-ch-3rd-page{
+  height: 800px;
+}
 
 .new-ch-announcment {
           box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
     float: left;
-    width: 29%;
+    width: 28%;
     margin-right: 2.70%;
-    height: 400px;
+    height: 350px;
     background-color: white;
     background-clip: border-box;
     border: 0px;
@@ -419,7 +424,7 @@ border-top-right-radius: 5px;
 }
 .new-ch-h9-table{
   color: black;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto';
     font-weight: bold;
     position: relative;
@@ -428,7 +433,8 @@ border-top-right-radius: 5px;
 }
 .new-ch-see-more{
   height: 50px;
-    padding: 30px;
+    padding-right: 100px;
+    padding-top: 50px;
     color: #4F4F4F;
     margin-right: 50px;
 }
@@ -447,29 +453,29 @@ border-top-right-radius: 5px;
   }
   .new-ch-table-NATIONAL-RECORDS-container{
     height: 700px;
-    padding-left: 8%;
-    padding-right: 7%;
+        padding-left: 9.370%;
+    padding-right: 9.370%;
 
   }
   .new-ch-table-REFERENCE-RECORDS-container{
     height: 750px;
-    padding-left: 8%;
-    padding-right: 7%;
+        padding-left: 9.370%;
+    padding-right: 9.370%;
 
   }
   .new-ch-table-time{
      position: relative;
     margin-left: 30px;
-    color: #D0D0D0;
+    color: #636363;
     font-size: 14px;
-  
     font-weight: normal;
     height: 10px;
+	line-height: 120%;
   }
     .new-ch-table-time2{
         position: relative;
     margin-left: 30px;
-    color: #D0D0D0;
+    color: #636363;
     font-size: 14px;
   
     font-weight: normal;
@@ -496,7 +502,7 @@ line-height: 120%;
   }
   .new-ch-h9-table-REFERENCE-RECORDS{
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Roboto';
     font-weight: bold;
     position: relative;
@@ -506,9 +512,8 @@ line-height: 120%;
 .new-ch-table-time3 {
     position: relative;
     margin-top: 0px;
-    color: #D0D0D0;
+    color: #636363;
     font-size: 20px;
-    font-family: 'nunito';
     font-weight: normal;
     height: 10px;
 }
