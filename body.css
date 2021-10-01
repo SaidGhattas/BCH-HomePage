@@ -134,7 +134,7 @@ border-radius: 10px!important;
     bottom: 0px;
     width: 100%;
 }
-@media screen and (min-height:601px){
+@media screen and (min-height:701px){
 .new-ch-card-footer2 {
   
          height: 50px;
@@ -144,10 +144,10 @@ border-radius: 10px!important;
     width: 26%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6vh;
+    margin-top: 12vh;
 }
 }
-@media screen and (max-height:600px){
+@media screen and (max-height:700px){
 .new-ch-card-footer2 {
   
          height: 50px;
@@ -513,7 +513,7 @@ line-height: 120%;
     position: relative;
     margin-top: 0px;
     color: #636363;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: normal;
     height: 10px;
 }
