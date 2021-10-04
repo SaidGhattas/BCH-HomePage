@@ -122,7 +122,10 @@ border-radius: 10px!important;
     width: 100%;
     position: absolute;
     padding: 1.5%;
-    
+    border-style: solid;
+	border-color: black;
+	border-width: 0.5px;
+	border-top: none;
 }
 .new-ch-card-footer {
   height: 18.9%;
