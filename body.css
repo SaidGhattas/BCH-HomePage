@@ -26,7 +26,7 @@
   background-size: cover; /* Resize the background image to cover the entire container */
 
   }
-  @media screen and (min-height: 701px){
+  @media screen and (min-height: 661px){
   .new-ch-top-text-info{
      height: 25%;
     padding-left: 9.37%;
@@ -34,12 +34,12 @@
     padding-bottom: 3%;
     padding-top: 3%;
     font-family: 'Roboto';
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     color: white !important;
   }
 }
-  @media screen and (max-height: 700px){  
+  @media screen and (max-height: 660px){  
   .new-ch-top-text-info{
      height: 25%;
     padding-left: 9.37%;
@@ -114,7 +114,7 @@ border-radius: 10px!important;
 }
 .new-ch-card-footer3 {
    
-           height: 55px;
+           height:70px;
     background-color: #00405C;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -134,7 +134,7 @@ border-radius: 10px!important;
     bottom: 0px;
     width: 100%;
 }
-@media screen and (min-height:701px){
+@media screen and (min-height:661px){
 .new-ch-card-footer2 {
   
          height: 50px;
@@ -144,10 +144,10 @@ border-radius: 10px!important;
     width: 26%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 12vh;
+    margin-top: 15vh;
 }
 }
-@media screen and (max-height:700px){
+@media screen and (max-height:660px){
 .new-ch-card-footer2 {
   
          height: 50px;
@@ -339,9 +339,7 @@ font-size: 14px;
 line-height: 16px;
 
 }
-.new-ch-3rd-page{
-  height: 800px;
-}
+
 
 .new-ch-announcment {
           box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
@@ -349,7 +347,7 @@ line-height: 16px;
     float: left;
     width: 28%;
     margin-right: 2.70%;
-    height: 350px;
+    height: 33vh;
     background-color: white;
     background-clip: border-box;
     border: 0px;
@@ -381,7 +379,7 @@ line-height: 16px;
 }
 
 .new-ch-announcment-image{
-       height: 233px;
+       height: 17.708vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -434,7 +432,7 @@ border-top-right-radius: 5px;
 .new-ch-see-more{
   height: 50px;
     padding-right: 100px;
-    padding-top: 50px;
+    padding-top: 3.125vh;
     color: #4F4F4F;
     margin-right: 50px;
 }
@@ -533,9 +531,13 @@ table.new-ch-table-NATIONAL-RECORDS {
 table.new-ch-table-NATIONAL-RECORDS td{
      border-bottom: 2px solid #D0D0D0  ;
      margin-right: 10px;
-     border-right: 32px solid white;
-     border-left: 24px solid white;
-     height: 119px;
+    border-right-width: 32px;
+    border-right-style: dotted;
+    border-right-color: white;
+     border-left-width: 24px;
+    border-left-style: dotted;
+    border-left-color: white;
+    height: 119px;
 }
 
 table.new-ch-table-NATIONAL-RECORDS td, th {

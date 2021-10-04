@@ -177,12 +177,12 @@ height: 2px;
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 64px;
+font-size: 56px;
 line-height: 75px;
 letter-spacing: 0.05em;
   padding-left: 38px;
   position: relative;
-top: 1vh;
+top: 0.5vh;
 
 
 }
@@ -194,10 +194,10 @@ top: 1vh;
  font-family: Roboto;
 font-style: normal;
 font-weight: bold;
-font-size: 24px;
+font-size: 20px;
 line-height: 149.38%;
  position: relative;
-top: 1vh;
+top: 0.5vh;
 }
 
 .new-ch-containter{
