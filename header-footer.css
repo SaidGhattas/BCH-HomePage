@@ -116,6 +116,9 @@ color: #000000;
     font-family: 'Roboto';
   padding-left: 0px;
     font-weight: bold;
+    border: 1px solid #00405C;
+    border-top-left-radius: 8px;
+
 
 }
 
@@ -269,7 +272,7 @@ nav.new-ch-nav1 ul li ul li a.new-ch-a-header {
     z-index: 1;
 box-sizing: border-box;
     padding-left: 0px;
-    border: 1px solid #00405C;
+  
    
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 

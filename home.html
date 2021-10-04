@@ -201,7 +201,8 @@ function myFunction() {
         </li>
           <li>
           <a class="new-ch-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!" >SEARCH<i class="new-ch-fa fa-caret-down"></i></a>
-     <ul style="width: 282px;" class="new-ch-nav-dropdown">
+     <ul style="width: 282px;    border: 1px solid #00405C;
+    border-radius: 8px;" class="new-ch-nav-dropdown">
             <li>
               <a class="new-ch-a-header"style="font-weight: 500;font-size: 18px;border-top-right-radius: 8px;border-top-left-radius: 8px" href="#" >RECORDS</a>
             </li>
@@ -229,7 +230,8 @@ function myFunction() {
           <a class="new-ch-a-header" href="#" style="  padding-right: 0px;margin-left: 32px;">COUNTRY PROFILES<i class="new-ch-fa fa-caret-down"></i></a>
           <ul class="new-ch-nav-dropdown" style="width: 380px">
          
-            <ul class="new-ch-country-list-dd" style="  ;max-height:340px;overflow-y:scroll;max-width: 400px;    margin-bottom: 0px; top: 0vh;">
+            <ul class="new-ch-country-list-dd" style="     border-top-right-radius: 10px;
+    border-top-left-radius: 10px ;max-height:340px;overflow-y:scroll;max-width: 400px;    margin-bottom: 0px; top: 0vh;">
           <!-- ngRepeat: c in countries | filter:startsWith track by c.code --><li style="border: 0px !important;" ng-repeat="c in countries | filter:startsWith track by c.code" class="ng-scope">
                                   <input type="text" placeholder="&#xF002; Search countries" style="    font-family: Roboto, FontAwesome;font-style: normal;font-weight: normal; width: 320px; margin-left: 24px;margin-bottom: 10px;margin-top: 4.167%"   
 class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countrySearch($event)" ng-model="countrySearchQuery">
@@ -1423,17 +1425,18 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
                                 </li><!-- end ngRepeat: c in countries | filter:startsWith track by c.code -->
 
                             </ul>
-                            <li style="    width: 100%;">
+                       
+                                    <li style="    width: 100%;">
                        <div class="new-ch-card-footer3" style="padding-left: 38px;padding-right: 24px;">
                             <a class="new-ch-cardFooterLink2 " style="font-weight: normal;color: white;font-size: 18px;text-decoration: underline;padding-left: 15px; line-height: 220%;" href="#">overview - LIST ALL COUNTRIES </a>
                         </div>
                             </li>
-                               
           </ul>
         </li>
       <li>
           <a class="new-ch-a-header"style="  padding-right: 0px;margin-left: 32px;" href="#!">HELP<i class="new-ch-fa fa-caret-down"></i></a>
-     <ul class="new-ch-nav-dropdown" style="width: 282px">
+     <ul class="new-ch-nav-dropdown" style="width: 282px;     border: 1px solid #00405C;
+    border-radius: 8px;">
             <li>
               <a class="new-ch-a-header"style="border-top-right-radius: 8px;border-top-left-radius: 8px;font-weight: 500;font-size: 18px" href="#">KNOWLEDGE BASE</a>
             </li>
@@ -1460,7 +1463,8 @@ class="form-control ng-pristine ng-untouched ng-valid ng-empty" ng-click="countr
         </li>
          <li style="float:right;">
           <a class="new-ch-a-header1"style="margin-right: 47px" href="#">PROTOCOL<i class="new-ch-fa fa-caret-down"></i></a>
-          <ul style="right: 0px; top:110%!important;width: 350px" class="new-ch-nav-dropdown">
+          <ul style="right: 0px; top:110%!important;width: 350px;    border: 1px solid #00405C;
+    border-radius: 8px;" class="new-ch-nav-dropdown">
             <li>
               <a class="new-ch-a-header"style="font-weight: 500;font-size: 18px;border-top-right-radius: 8px;border-top-left-radius: 8px;width: 348px;" href="#">CARTAGENA PROTOCOL</a>
             </li>
