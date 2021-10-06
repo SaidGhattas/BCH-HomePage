@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 10.837%;
+}
+
+.new-ch-top-menu  {
+    position: relative;
+    width: 100%;
+    height: 40.909%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #D0D0D0;
+}
+
+.new-ch-convention-links-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.new-ch-icons-wrapper {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.new-ch-user-icons-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.new-ch-dropdown-btn {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.new-ch-bottom-menu {
+    position: relative;
+    width: 100%;
+    height: 59.091%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.new-ch-main-menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#new-ch-home {
+    position: relative;
+    height: calc(100% - 10.837%);
+    padding: 0 30px;
+    background-image: url('/icons/background\ image\ william-jones-5hgdidNUAds-unsplash.png');
+    background-size: cover;
+}
+
+.new-ch-home-para {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.new-ch-home-wrapper {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+}
+
+.new-ch-card {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.bi-lightbulb {
+    color: #DA3B01;
+    font-size: 56px;
+}
+
+/* Screens between 576 - 768 */
+@media only screen and (min-width: 576px) {
+
+
+
+}
+
+/* Screens between 768 - 992 */
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+/* Screens between 992 - 1200 */ 
+@media only screen and (min-width: 992px) {
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 24%;
+    }
+
+    .new-ch-top-menu  {
+        position: relative;
+        width: 100%;
+        height: 32.432%;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #D0D0D0;
+    }
+
+    .new-ch-bottom-menu {
+        position: relative;
+        width: 100%;
+        height: calc(100% - 32.432%);
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #new-ch-home {
+        position: relative;
+        height: calc(100% - 24%);
+    }
+
+    .new-ch-home-details-wrapper {
+        position: relative;
+        width: 100%;
+        height: 90%;
+        padding: 0 9.370%;
+        display: grid;
+        grid-template-rows: 15% 70% 15%;
+    }
+
+    .new-ch-card-wrapper {
+        height: 42.539%;
+    }
+
+    .new-ch-home-para {
+        position: relative;
+        font-size: 20px;
+        color: #fff;
+        padding: 0;
+    }
+
+}
+
+/* Screens between 1200 - 1500 */
+
+@media only screen and (min-width: 1200px) {
+
+    
+
+}
+
+/* Screens higher than 1500 */ 
+@media only screen and (min-width: 1500px) {
+
+    
+
+}
